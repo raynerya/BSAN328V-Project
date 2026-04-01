@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule | Rayner Physical Therapy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="branding">
+      <h1>Rayner Physical Therapy</h1>
+      <p>Schedule your next appointment with ease.</p>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="therapists.html">Therapists</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h2>Appointment Booking</h2>
+      <p>Complete this form to request a visit with one of our physical therapy specialists.</p>
+    </section>
+
+    <section class="form-section">
+      <form action="#" method="post" class="appointment-form">
+        <fieldset>
+          <legend>Patient and Appointment Details</legend>
+
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" required>
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+
+          <label for="therapistChoice">Preferred therapist or service</label>
+          <select id="therapistChoice" name="therapistChoice">
+            <option value="">Select a therapist or specialty</option>
+            <option value="rehab">Rehabilitation Specialist</option>
+            <option value="sports">Sports Therapy</option>
+            <option value="pediatrics">Pediatric Physical Therapy</option>
+            <option value="manual">Manual Therapy</option>
+          </select>
+
+          <label for="date">Preferred date</label>
+          <input type="date" id="date" name="date">
+
+          <label for="notes">What would you like the therapist to know?</label>
+          <textarea id="notes" name="notes" rows="5" placeholder="Briefly describe your goals or concerns"></textarea>
+        </fieldset>
+
+        <button type="submit" class="button">Submit Request</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
