@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rayner Realty Listings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="branding">
+      <h1>Rayner Realty Connect</h1>
+      <p>Explore our specialists and find the right team for your property goals.</p>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">Listings</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h2>Specialists and departments</h2>
+      <p>Search our real estate professionals by name or department to schedule the consultation that fits your needs.</p>
+    </section>
+
+    <section class="table-section">
+      <form class="search-form" onsubmit="return false;" aria-label="Search real estate specialists">
+        <label for="searchInput">Search for a real estate specialist or department</label>
+        <div class="search-controls">
+          <input id="searchInput" type="search" name="search" placeholder="Search by agent or department" aria-label="Search specialists" />
+          <button id="searchButton" type="button">Search</button>
+        </div>
+      </form>
+
+      <div class="table-wrapper">
+        <table id="specialistsTable">
+          <caption>Real estate specialists available for appointments</caption>
+          <thead>
+            <tr>
+              <th scope="col">Specialist</th>
+              <th scope="col">Department</th>
+              <th scope="col">Availability</th>
+              <th scope="col">Schedule</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table rows populated automatically -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="features">
+      <article>
+        <h3>Local market expertise</h3>
+        <p>Our specialists know the neighborhoods, trends, and values that matter most.</p>
+      </article>
+      <article>
+        <h3>Consultations made simple</h3>
+        <p>Choose a specialist and book time directly with a clear, accessible process.</p>
+      </article>
+      <article>
+        <h3>Fast follow-up</h3>
+        <p>Our team will connect with you quickly to confirm availability and answer questions.</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

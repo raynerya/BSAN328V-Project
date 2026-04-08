@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule a Consultation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="branding">
+      <h1>Rayner Realty Connect</h1>
+      <p>Book a consultation with one of our expert real estate specialists.</p>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">Listings</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h2>Schedule an appointment</h2>
+      <p>Use the form below to request a property consultation or buyer strategy meeting.</p>
+    </section>
+
+    <section class="form-section">
+      <form class="appointment-form" action="#" method="get">
+        <fieldset>
+          <legend>Schedule a property consultation</legend>
+          <label for="fullName">Full name</label>
+          <input id="fullName" name="fullName" type="text" required placeholder="Enter your name" />
+
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" />
+
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" required placeholder="(555) 123-4567" />
+
+          <label for="consultationType">Consultation type</label>
+          <select id="consultationType" name="consultationType" required>
+            <option value="">Select one</option>
+            <option value="buying">Buying consultation</option>
+            <option value="selling">Selling consultation</option>
+            <option value="valuation">Property valuation</option>
+            <option value="investment">Investment strategy</option>
+          </select>
+
+          <label for="preferredDate">Preferred date</label>
+          <input id="preferredDate" name="preferredDate" type="date" required />
+
+          <label for="message">Tell us more</label>
+          <textarea id="message" name="message" placeholder="Add any details about your goals, budget, or property type."></textarea>
+        </fieldset>
+
+        <button type="submit">Submit request</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -120,6 +120,13 @@ img {
   padding: 2rem;
 }
 
+.page-intro h2,
+.page-intro p,
+.form-section h2,
+.table-section h2 {
+  margin: 0;
+}
+
 .table-section,
 .form-section {
   padding: 0 2rem 2rem;
@@ -144,7 +151,8 @@ img {
   border-radius: 0.75rem;
 }
 
-.search-controls button {
+.search-controls button,
+.appointment-form button {
   padding: 0.75rem 1rem;
   border: none;
   background: var(--accent);
@@ -223,6 +231,7 @@ textarea {
 
 textarea {
   resize: vertical;
+  min-height: 130px;
 }
 
 .site-footer {

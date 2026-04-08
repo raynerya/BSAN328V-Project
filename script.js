@@ -1,32 +1,35 @@
 const specialists = [
   {
-    name: 'Mia Reyes, PT, DPT',
-    department: 'Sports Rehabilitation',
+    name: 'Elena Garcia',
+    department: 'Luxury Homes',
     availability: 'Mon, Wed, Fri',
-    scheduleLink: 'schedule.html'
+    scheduleLink: 'appointments.html'
   },
   {
-    name: 'Jordan Kim, PT',
-    department: 'Orthopedic Recovery',
+    name: 'Marcus Lee',
+    department: 'Urban Condos',
     availability: 'Tue, Thu',
-    scheduleLink: 'schedule.html'
+    scheduleLink: 'appointments.html'
   },
   {
-    name: 'Avery Patel, PT',
-    department: 'Pediatric Therapy',
+    name: 'Sofia Patel',
+    department: 'Family Residences',
     availability: 'Mon-Fri',
-    scheduleLink: 'schedule.html'
+    scheduleLink: 'appointments.html'
   },
   {
-    name: 'Lina Torres, PT, OCS',
-    department: 'Manual Therapy',
-    availability: 'Wed, Thu',
-    scheduleLink: 'schedule.html'
+    name: 'Noah Alexander',
+    department: 'Commercial Investment',
+    availability: 'Wed, Sat',
+    scheduleLink: 'appointments.html'
   }
 ];
 
 function renderSpecialists(rows) {
   const tbody = document.querySelector('#specialistsTable tbody');
+  if (!tbody) {
+    return;
+  }
   tbody.innerHTML = '';
 
   rows.forEach((specialist) => {
