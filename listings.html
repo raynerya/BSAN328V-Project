@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rayner Realty Listings</title>
+    <title>Rayner Realty Connect - Listings</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,14 +28,6 @@
     </section>
 
     <section class="table-section">
-      <form class="search-form" onsubmit="return false;" aria-label="Search real estate specialists">
-        <label for="searchInput">Search for a real estate specialist or department</label>
-        <div class="search-controls">
-          <input id="searchInput" type="search" name="search" placeholder="Search by agent or department" aria-label="Search specialists" />
-          <button id="searchButton" type="button">Search</button>
-        </div>
-      </form>
-
       <div class="table-wrapper">
         <table id="specialistsTable">
           <caption>Real estate specialists available for appointments</caption>
@@ -48,7 +40,30 @@
             </tr>
           </thead>
           <tbody>
-            <!-- Table rows populated automatically -->
+            <tr>
+              <td>Elena Garcia</td>
+              <td>Luxury Homes</td>
+              <td>Mon, Wed, Fri</td>
+              <td><a href="appointments.html">Schedule</a></td>
+            </tr>
+            <tr>
+              <td>Marcus Lee</td>
+              <td>Urban Condos</td>
+              <td>Tue, Thu</td>
+              <td><a href="appointments.html">Schedule</a></td>
+            </tr>
+            <tr>
+              <td>Sofia Patel</td>
+              <td>Family Residences</td>
+              <td>Mon-Fri</td>
+              <td><a href="appointments.html">Schedule</a></td>
+            </tr>
+            <tr>
+              <td>Noah Alexander</td>
+              <td>Commercial Investment</td>
+              <td>Wed, Sat</td>
+              <td><a href="appointments.html">Schedule</a></td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -68,8 +83,19 @@
         <p>Our team will connect with you quickly to confirm availability and answer questions.</p>
       </article>
     </section>
-  </main>
 
-  <script src="script.js"></script>
+    <section class="search-section">
+      <form id="searchForm">
+        <label for="searchInput">Search by name or department:</label>
+        <input 
+        type="text" 
+        id="searchInput" 
+        name="searchInput" 
+        placeholder="e.g. Elena or Luxury Homes"
+        >
+        <button type="submit">Search</button>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
